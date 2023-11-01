@@ -1,0 +1,13 @@
+psql -U postgres -d inzhir
+CREATE TABLE user_status (user_id VARCHAR, status INTEGER);
+CREATE TABLE tasks (created_at_unix bigint, task varchar, added_by varchar, owner varchar, priority varchar, status varchar, finished_at_unix bigint);
+dankhaiaa_user_id = '471115888'
+alex_user_id = '284798792'
+
+user_statuses = ["0": "silent mode", "1": "awaiting new task"]
+task_statuses = ['open', 'resolved']
+task_priorities = {"0": "Низкий", "1": "Средний", "2": "Высокий"}
+bot_commands = []bot_token = '5842438717:AAGN44eRCKq98GiGkUj_wTErgLbDky17WGs'
+user_id_to_name = {"471115888": "Данхаяа", "284798792": "Саша"}
+
+write_new_task
